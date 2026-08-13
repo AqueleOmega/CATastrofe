@@ -19,7 +19,6 @@ public class Movimentação : MonoBehaviour
 
     void Update()
     {
-
         rb.linearVelocity = input * velocidade;
     }
 }

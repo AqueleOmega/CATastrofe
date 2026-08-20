@@ -1,30 +1,31 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class Rotaçãoteste : MonoBehaviour
 {
-    public Transform transform1;
-    public Transform transform2;
+    Transform player_transform;
+    Transform rotationbala;
     Vector2 vector_dist;
     Vector2 dist_norm;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Quaternion myRotation = Quaternion.identity;
-        myRotation.eulerAngles 
+        player_transform = GameObject.FindGameObjectWithTag("Player").transform;
+        rotationbala = GameObject.FindGameObjectWithTag("RotationBala").transform;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        vector_dist = transform1.position - transform2.position;
+        vector_dist = player_transform.position - transform.position;
         dist_norm = vector_dist.normalized;
-        float m_Angle = Vector2.SignedAngle(Vector2.right, dist_norm); 
-        myRotation.eulerAngles = new Vector3 (0,0,m_Angle)
-        transform1.rotation.z = myRotation;
-
-        Debug.Log(m_Angle);
-        Debug.Log(vector_dist);
-        Debug.Log(dist_norm);
+        float anguloRAD = Mathf.Atan2(dist_norm.y, dist_norm.x);
+        float angulo_graus_ini = anguloRAD * 180 / math.PI;
+        float angulo_graus_player = (anguloRAD * 180 / math.PI) + 180;
+        transform.rotation = Quaternion.Euler(0, 0, angulo_graus_ini);
+        rotationbala.rotation = Quaternion.Euler(0, 0, angulo_graus_player);
     }
 /*
     private void OnDrawGizmos(){

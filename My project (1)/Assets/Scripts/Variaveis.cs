@@ -3,13 +3,14 @@ using UnityEngine;
 
 public static class Variaveis 
 {
+    //variaveis joagdor
     public static int level = 0;
     public static float xp = 0;
-
-    public static int dano_player = 50;
+    public static int dano_player = 10;
     public static float vida = 20;
     public static float velocidade_bala = 6;
 
+    //variaveis inimigo
     public static int inimigos_maximos = 10;
     public static int inimigos_atuais = 0;
     public static float cooldowninimigos = 1;

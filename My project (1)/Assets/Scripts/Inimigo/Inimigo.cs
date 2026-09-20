@@ -4,7 +4,7 @@ public class Inimigo : MonoBehaviour
 {
     float VidaMaxima = Variaveis.vida_max_inimigo;
     float VidaAtual;
-    float xp = Variaveis.xp;
+    float xp = Variaveis.xp_inimigo;
     float velocidade = Variaveis.velocidade_inimigo;
     public Rigidbody2D rb;
 
@@ -22,7 +22,7 @@ public class Inimigo : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Bala"))
+        if (col.gameObject.CompareTag("Bala"))
         {
             Destroy(col.gameObject);
             VidaAtual -= Variaveis.dano_player;

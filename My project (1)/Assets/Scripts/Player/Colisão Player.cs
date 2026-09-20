@@ -10,7 +10,7 @@ public class ColisãoPlayer : MonoBehaviour
         {
             Variaveis.vida -= Variaveis.dano_inimigo/100;
             Debug.Log(Variaveis.vida);
-            if (Variaveis.vida == 0)
+            if (Variaveis.vida < 0)
             {
                 Morte();
             }

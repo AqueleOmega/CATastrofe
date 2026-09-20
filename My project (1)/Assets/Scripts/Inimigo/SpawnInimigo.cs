@@ -7,8 +7,10 @@ public class Spawn : MonoBehaviour
     
     Transform player_transform;
 
-    float cooldown = 0.1f;
-    float distancia = 30;
+    float cooldown = Variaveis.cooldowninimigos;
+    float distancia = Variaveis.distancia_inimigos;
+    float quantia_maxima = Variaveis.inimigos_maximos;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,27 +26,28 @@ public class Spawn : MonoBehaviour
 
     IEnumerator spawn(float cooldown)
     {
-        float inimigos = 0;
-        Debug.Log("Foi");
-        
         while (true)
         {
             yield return new WaitForSeconds(cooldown);
+
             float randomX = Random.Range(-100, 100);
             float randomY = Random.Range(-100, 100);
+
             Vector2 dist_norm = new Vector2(randomX,randomY).normalized * distancia;
-            if (dist_norm == new Vector2 (0,0)){
+
+            if (dist_norm == new Vector2 (0,0))
+            {
                 randomY = 10;
                 dist_norm = new Vector2(randomX,randomY).normalized;
             }
-            Debug.Log(randomX);
-            Debug.Log(randomY);
-            Debug.Log(dist_norm);
+
             Vector2 dist_true = new Vector2(player_transform.position.x, player_transform.position.y) + dist_norm;
-            Debug.Log(dist_true);
-            if (inimigos < 100){
+
+
+            if (Variaveis.inimigos_atuais < quantia_maxima)
+            {
                 GameObject Inimigo = Instantiate(prefab, dist_true, transform.rotation);
-                inimigos += 1;
+                Variaveis.inimigos_atuais += 1;
             }
         
 

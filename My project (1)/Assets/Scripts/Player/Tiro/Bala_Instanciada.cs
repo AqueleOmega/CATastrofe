@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.Mathematics;
 using UnityEditor;
 using UnityEngine;
@@ -17,6 +18,11 @@ public class Bala_Instanciada : MonoBehaviour
         rb.linearVelocity = transform.right * velocidade; //movo em direção do inimigo
 
 
+    }
+
+    void Start()
+    {
+        StartCoroutine(Morte());
     }
     public Transform InimigoMaisPerto()
     {
@@ -54,6 +60,10 @@ public class Bala_Instanciada : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, angulo_graus);
     }
 
-
+    IEnumerator Morte()
+    {
+        yield return new WaitForSeconds(7);
+        Destroy(gameObject);
+    }
 
 }

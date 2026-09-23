@@ -5,7 +5,7 @@ public class Movimentação : MonoBehaviour
 {
     Vector2 input;
     public Rigidbody2D rb;
-    public float velocidade;
+    float velocidade = Variaveis.velocidade_player;
     
     void Start()
     {

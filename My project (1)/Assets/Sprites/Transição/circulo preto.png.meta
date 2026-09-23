@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4dd6cbc70d90efb41988b52e18fdf332
+guid: a539986ee70b444478d67777e732d03e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8957324059118975939
-    second: images_0
+      213: -2865699551286078239
+    second: circulo preto_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: images_0
+      name: circulo preto_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 554
-        height: 554
+        x: 28
+        y: 28
+        width: 144
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3cbb8d916cece4c70800000000000000
-      internalID: 8957324059118975939
+      spriteID: 1e4d894f07dfa38d0800000000000000
+      internalID: -2865699551286078239
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      images_0: 8957324059118975939
+      circulo preto_0: -2865699551286078239
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

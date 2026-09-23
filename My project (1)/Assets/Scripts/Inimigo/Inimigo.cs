@@ -17,6 +17,7 @@ public class Inimigo : MonoBehaviour
     {
         Destroy(gameObject);
         Variaveis.xp += xp;
+        nivel.ChecarNivel();
         Variaveis.inimigos_atuais -= 1;
     }
 

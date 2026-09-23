@@ -6,7 +6,6 @@ using UnityEngine;
 public class Gatilho : MonoBehaviour
 {
     public GameObject modelo;
-    public float cooldown = 3;
     Transform player_transform;
     Transform bala_transform;
 
@@ -23,7 +22,7 @@ public class Gatilho : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(cooldown); 
+            yield return new WaitForSeconds(Variaveis.cooldown_bala); 
             //cada (cooldown) segundos executa a parte de baixo
 
             GameObject Tiro_INST = Instantiate(modelo, player_transform.position, Quaternion.Euler(0, 0, 0)); 

@@ -27,6 +27,6 @@ public class Menu : MonoBehaviour
     {
         anim.SetTrigger("Start");
         yield return new WaitForSeconds(1);
-        //SceneManager.LoadScene(1);
+        SceneManager.LoadScene(1);
     }
 }

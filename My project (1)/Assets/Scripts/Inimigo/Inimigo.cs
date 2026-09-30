@@ -26,7 +26,7 @@ public class Inimigo : MonoBehaviour
         if (col.gameObject.CompareTag("Bala"))
         {
             Destroy(col.gameObject);
-            VidaAtual -= Variaveis.dano_player;
+            VidaAtual -= Random.Range(Variaveis.dano_player/1.20f, Variaveis.dano_player * 1.20f);
             if (VidaAtual <= 0)
             {
                 Morte();

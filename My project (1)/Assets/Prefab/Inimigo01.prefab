@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2844980418366358182}
   - component: {fileID: 2515454605443960027}
   - component: {fileID: 6591254019816713216}
-  - component: {fileID: 871937617405921923}
+  - component: {fileID: -3031731845075870694}
   m_Layer: 0
   m_Name: Inimigo01
   m_TagString: Enemy
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59289cb21cba5449b3736711fb8cbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &871937617405921923
+--- !u!114 &-3031731845075870694
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,3 +179,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2515454605443960027}
+  prefab_dano: {fileID: 5205947676578360829, guid: 43bef6e3eda85dc498d77c1dff46ee0b, type: 3}

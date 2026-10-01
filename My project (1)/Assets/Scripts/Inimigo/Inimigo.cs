@@ -7,6 +7,7 @@ public class Inimigo : MonoBehaviour
     float xp = Variaveis.xp_inimigo;
     float velocidade = Variaveis.velocidade_inimigo;
     public Rigidbody2D rb;
+    public GameObject prefab_dano;
 
     void Start()
     {
@@ -26,7 +27,9 @@ public class Inimigo : MonoBehaviour
         if (col.gameObject.CompareTag("Bala"))
         {
             Destroy(col.gameObject);
-            VidaAtual -= Random.Range(Variaveis.dano_player/1.20f, Variaveis.dano_player * 1.20f);
+            float dano = Mathf.RoundToInt(Random.Range(Variaveis.dano_player / 1.20f, Variaveis.dano_player * 1.20f));
+            VidaAtual -= dano;
+            Dano_PopUp.Create(transform.position, dano, prefab_dano);
             if (VidaAtual <= 0)
             {
                 Morte();

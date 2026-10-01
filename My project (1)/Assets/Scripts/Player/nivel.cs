@@ -11,7 +11,6 @@ public class nivel : MonoBehaviour
             Variaveis.vida += 1;
             Variaveis.dano_player +=  1;
             Variaveis.cooldown_bala = Variaveis.cooldown_bala / 1.10f;
-            Debug.Log(Variaveis.cooldown_bala);
         }
     }
 }

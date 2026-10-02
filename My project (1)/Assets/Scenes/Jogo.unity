@@ -1788,7 +1788,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91322dedc3fffc84dac78f7fa8bfa66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6190338074787721888, guid: 15881912481c67a458bdac08acb7aef1, type: 3}
+  inimigo01: {fileID: 6190338074787721888, guid: 15881912481c67a458bdac08acb7aef1, type: 3}
+  inimigo02: {fileID: 6190338074787721888, guid: 45ddf01f84cf2dc4797bc41eba91e002, type: 3}
+  inimigo03: {fileID: 6190338074787721888, guid: 120ce795ba129ad4bb8520b2d3be1f25, type: 3}
 --- !u!114 &2054035584
 MonoBehaviour:
   m_ObjectHideFlags: 0

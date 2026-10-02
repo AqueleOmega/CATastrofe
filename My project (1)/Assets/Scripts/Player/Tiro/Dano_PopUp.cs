@@ -26,7 +26,7 @@ public class Dano_PopUp : MonoBehaviour
     {
         float tempo = 0;
         float variaçãox = Random.Range(-0.03f, 0.03f);
-        while (tempo < 0.5)
+        while (tempo < Variaveis.tempo_popup_dano_na_tela) //0.5 segundos
         {
             yield return new WaitForFixedUpdate();
             numero.transform.position += new Vector3(variaçãox, 0.06f);

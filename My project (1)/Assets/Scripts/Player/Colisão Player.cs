@@ -8,7 +8,7 @@ public class ColisãoPlayer : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Variaveis.vida -= Variaveis.dano_inimigo/100;
+            Variaveis.vida -= Variaveis.dano_inimigo1/100;
             if (Variaveis.vida < 0)
             {
                 Morte();

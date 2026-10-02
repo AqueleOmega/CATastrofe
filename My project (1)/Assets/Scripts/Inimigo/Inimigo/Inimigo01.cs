@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class Inimigo : MonoBehaviour
+public class Inimigo01 : MonoBehaviour
 {
-    float VidaMaxima = Variaveis.vida_max_inimigo;
+    float VidaMaxima = Variaveis.vida_max_inimigo1;
     float VidaAtual;
-    float xp = Variaveis.xp_inimigo;
-    float velocidade = Variaveis.velocidade_inimigo;
+    float xp = Variaveis.xp_inimigo1;
+    float velocidade = Variaveis.velocidade_inimigo1;
     public Rigidbody2D rb;
     public GameObject prefab_dano;
 

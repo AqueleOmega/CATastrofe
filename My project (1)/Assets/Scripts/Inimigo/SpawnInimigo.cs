@@ -3,8 +3,10 @@ using System.Collections;
 
 public class Spawn : MonoBehaviour
 {
-    public GameObject prefab;
-    
+    public GameObject inimigo01;
+    public GameObject inimigo02;
+    public GameObject inimigo03;
+
     Transform player_transform;
 
     float cooldown = Variaveis.cooldowninimigos;
@@ -44,9 +46,21 @@ public class Spawn : MonoBehaviour
             Vector2 dist_true = new Vector2(player_transform.position.x, player_transform.position.y) + dist_norm;
 
 
-            if (Variaveis.inimigos_atuais < quantia_maxima)
+            if (Variaveis.inimigos_atuais < quantia_maxima) //se tem espaço pro inimigo spawnar
             {
-                GameObject Inimigo = Instantiate(prefab, dist_true, transform.rotation);
+                if (Variaveis.minutos < 1)
+                {
+                    GameObject Inimigo = Instantiate(inimigo01, dist_true, transform.rotation);
+                }
+                else if (Variaveis.minutos == 1)
+                {
+                    GameObject Inimigo = Instantiate(inimigo02, dist_true, transform.rotation);
+                }
+                else
+                {
+                    GameObject Inimigo = Instantiate(inimigo03, dist_true, transform.rotation);
+                }
+
                 Variaveis.inimigos_atuais += 1;
             }
         

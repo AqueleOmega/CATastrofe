@@ -48,7 +48,8 @@ public static class Variaveis
     public static float orbe_1 = 5;
     public static float orbe_2 = 10;
     public static float orbe_3 = 20;
-    public static float velocidade_xp = 4;
+    public static float velocidade_xp = 6;
+
 
 }
    

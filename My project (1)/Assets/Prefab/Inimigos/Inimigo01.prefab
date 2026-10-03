@@ -180,3 +180,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 2515454605443960027}
   prefab_dano: {fileID: 5205947676578360829, guid: 43bef6e3eda85dc498d77c1dff46ee0b, type: 3}
+  prefab_xp: {fileID: 7853714708461346536, guid: 5ffea6430880a5548a04bfcc46ef48db, type: 3}

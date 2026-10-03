@@ -3,7 +3,7 @@ using UnityEngine;
 
 public static class Variaveis 
 {
-    //variaveis joagdor
+    //variaveis jogador
     public static int level = 0;
     public static int levelup_xp = 10;
     public static float xp = 0;
@@ -13,6 +13,7 @@ public static class Variaveis
     public static float cooldown_bala = 3;
     public static float velocidade_player = 5;
     public static float tempo_popup_dano_na_tela = 0.5f;
+    public static float tamanho_coletor_xp = 3;
 
     //variaveis UI
     public static float segundos = 0;
@@ -41,6 +42,12 @@ public static class Variaveis
     public static float xp_inimigo3 = 5;
     public static float vida_max_inimigo3 = 1;
     public static float velocidade_inimigo3 = 3;
+
+    //variaveis XP
+    public static float orbe_1 = 5;
+    public static float orbe_2 = 10;
+    public static float orbe_3 = 20;
+    public static float velocidade_xp = 4;
 
 }
    

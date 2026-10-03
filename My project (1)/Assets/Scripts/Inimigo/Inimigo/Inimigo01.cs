@@ -8,6 +8,7 @@ public class Inimigo01 : MonoBehaviour
     float velocidade = Variaveis.velocidade_inimigo1;
     public Rigidbody2D rb;
     public GameObject prefab_dano;
+    public GameObject prefab_xp;
 
     void Start()
     {
@@ -17,8 +18,7 @@ public class Inimigo01 : MonoBehaviour
     void Morte()
     {
         Destroy(gameObject);
-        Variaveis.xp += xp;
-        nivel.ChecarNivel();
+        Instantiate(prefab_xp, transform.position, Quaternion.identity);
         Variaveis.inimigos_atuais -= 1;
     }
 

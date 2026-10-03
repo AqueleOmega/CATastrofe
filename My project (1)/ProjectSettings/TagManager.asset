@@ -8,6 +8,10 @@ TagManager:
   - background
   - Enemy
   - Bala
+  - XP
+  - XP2
+  - XP3
+  - XP_Circle
   layers:
   - Default
   - TransparentFX

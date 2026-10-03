@@ -13,7 +13,6 @@ public class Gatilho : MonoBehaviour
     void Start()
     {
         player_transform = GameObject.FindGameObjectWithTag("Player").transform;
-        bala_transform = GameObject.FindGameObjectWithTag("RotationBala").transform;
         StartCoroutine(Tempo());
 
     }

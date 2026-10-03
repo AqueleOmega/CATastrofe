@@ -4,7 +4,6 @@ using UnityEngine;
 public class Rotaçãoteste : MonoBehaviour
 {
     Transform player_transform;
-    Transform rotationbala;
     Vector2 vector_dist;
     Vector2 dist_norm;
 
@@ -12,7 +11,6 @@ public class Rotaçãoteste : MonoBehaviour
     void Start()
     {
         player_transform = GameObject.FindGameObjectWithTag("Player").transform;
-        rotationbala = GameObject.FindGameObjectWithTag("RotationBala").transform;
 
     }
 
@@ -23,9 +21,7 @@ public class Rotaçãoteste : MonoBehaviour
         dist_norm = vector_dist.normalized;
         float anguloRAD = Mathf.Atan2(dist_norm.y, dist_norm.x);
         float angulo_graus_ini = anguloRAD * 180 / math.PI;
-        float angulo_graus_player = (anguloRAD * 180 / math.PI) + 180;
         transform.rotation = Quaternion.Euler(0, 0, angulo_graus_ini);
-        rotationbala.rotation = Quaternion.Euler(0, 0, angulo_graus_player);
     }
 /*
     private void OnDrawGizmos(){

@@ -18,6 +18,7 @@ public static class Variaveis
     //variaveis UI
     public static float segundos = 0;
     public static int minutos = 0;
+    public static float aceleração_tempo = 1;
 
     //variaveis inimigo global
     public static int inimigos_maximos = 10;

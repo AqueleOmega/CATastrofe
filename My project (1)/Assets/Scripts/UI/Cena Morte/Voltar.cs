@@ -27,9 +27,11 @@ public class Voltar : MonoBehaviour
         Variaveis.cooldown_bala = 3;
         Variaveis.velocidade_player = 5;
         Variaveis.levelup_xp = 10;
+        Variaveis.tamanho_coletor_xp = 3;
 
         Variaveis.segundos = 0;
         Variaveis.minutos = 0;
+        Variaveis.aceleração_tempo = 1;
 
         Variaveis.inimigos_maximos = 10;
         Variaveis.inimigos_atuais = 0;

@@ -10,7 +10,7 @@ public class Cronometro : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Variaveis.segundos += Time.deltaTime * 5;
+        Variaveis.segundos += Time.deltaTime * Variaveis.aceleração_tempo;
         float tempoarrendodado = Mathf.CeilToInt(Variaveis.segundos);
         if (tempoarrendodado >= 60)
         {

@@ -22,7 +22,8 @@ public class Voltar : MonoBehaviour
         Variaveis.xp = 0;
         Variaveis.dano_player = 10;
         Variaveis.tempo_popup_dano_na_tela = 0.5f;
-        Variaveis.vida = 20;
+        Variaveis.vida = 10;
+        Variaveis.vida_max = 10;
         Variaveis.velocidade_bala = 6;
         Variaveis.cooldown_bala = 3;
         Variaveis.velocidade_player = 5;
@@ -31,7 +32,7 @@ public class Voltar : MonoBehaviour
 
         Variaveis.segundos = 0;
         Variaveis.minutos = 0;
-        Variaveis.aceleração_tempo = 1;
+        Variaveis.acel_tempo = 1;
 
         Variaveis.inimigos_maximos = 10;
         Variaveis.inimigos_atuais = 0;

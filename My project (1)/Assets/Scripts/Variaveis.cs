@@ -9,6 +9,7 @@ public static class Variaveis
     public static float xp = 0;
     public static int dano_player = 10;
     public static float vida = 10;
+    public static float vida_max = 10;
     public static float velocidade_bala = 6;
     public static float cooldown_bala = 3;
     public static float velocidade_player = 5;
@@ -18,7 +19,7 @@ public static class Variaveis
     //variaveis UI
     public static float segundos = 0;
     public static int minutos = 0;
-    public static float aceleração_tempo = 1;
+    public static float acel_tempo = 1;
 
     //variaveis inimigo global
     public static int inimigos_maximos = 10;

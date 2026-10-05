@@ -8,7 +8,7 @@ public class nivel : MonoBehaviour
         {
             Variaveis.xp -= Variaveis.levelup_xp;
             Variaveis.level++;
-            Variaveis.vida += 1;
+            GanharVida.Life_Change(1);
             Variaveis.dano_player +=  1;
             Variaveis.cooldown_bala = Variaveis.cooldown_bala / 1.10f;
             Variaveis.tamanho_coletor_xp *= 1.10f;

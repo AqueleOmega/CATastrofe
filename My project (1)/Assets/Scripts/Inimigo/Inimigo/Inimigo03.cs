@@ -9,10 +9,12 @@ public class Inimigo3 : MonoBehaviour
     public Rigidbody2D rb;
     public GameObject prefab_dano;
     public GameObject prefab_xp;
+    Transform player_transform;
 
     void Start()
     {
         VidaAtual = VidaMaxima;
+        player_transform = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Morte()
@@ -39,6 +41,8 @@ public class Inimigo3 : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.linearVelocity = transform.right * velocidade;
+        Vector2 vector_dist = player_transform.position - transform.position;
+        Vector2 dist_norm = vector_dist.normalized;
+        rb.linearVelocity = dist_norm * velocidade;
     }
 }

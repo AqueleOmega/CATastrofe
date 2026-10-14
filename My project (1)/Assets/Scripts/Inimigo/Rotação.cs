@@ -3,6 +3,10 @@ using UnityEngine;
 
 public class Rotaçãoteste : MonoBehaviour
 {
+    //script obsoleta
+
+
+
     Transform player_transform;
     Vector2 vector_dist;
     Vector2 dist_norm;
@@ -21,7 +25,7 @@ public class Rotaçãoteste : MonoBehaviour
         dist_norm = vector_dist.normalized;
         float anguloRAD = Mathf.Atan2(dist_norm.y, dist_norm.x);
         float angulo_graus_ini = anguloRAD * 180 / math.PI;
-        transform.rotation = Quaternion.Euler(0, 0, angulo_graus_ini);
+        //transform.rotation = Quaternion.Euler(0, 0, angulo_graus_ini); <--- linha mudada (essa script é obsoleta)
     }
 /*
     private void OnDrawGizmos(){

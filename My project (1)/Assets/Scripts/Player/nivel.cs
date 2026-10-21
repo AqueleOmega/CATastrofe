@@ -8,11 +8,17 @@ public class nivel : MonoBehaviour
         {
             Variaveis.xp -= Variaveis.levelup_xp;
             Variaveis.level++;
+
+            GerenciadorLevelUp gerenciador = Object.FindFirstObjectByType<GerenciadorLevelUp>();
+            gerenciador.AbrirMenu();
+            
+            /*
             GanharVida.Life_Change(1);
             Variaveis.dano_player +=  1;
             Variaveis.cooldown_bala = Variaveis.cooldown_bala / 1.10f;
             Variaveis.tamanho_coletor_xp *= 1.10f;
             tamanho_circulo.Mudar_Alcance_XP(Variaveis.tamanho_coletor_xp);
+            */
 
         }
     }

@@ -33,14 +33,4 @@ public class IrAtePlayer : MonoBehaviour
             target = true;
         }
     }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            // Soma o valor do XP na Variaveis
-            Variaveis.xp += Variaveis.orbe_1;
-            Debug.Log($"[XP COLETADO] XP Atual: {Variaveis.xp} / {Variaveis.levelup_xp}");
-            Destroy(gameObject);
-        }
-    }
 }

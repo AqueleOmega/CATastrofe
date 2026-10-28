@@ -34,6 +34,11 @@ public class ColisãoPlayer : MonoBehaviour
             nivel.ChecarNivel();
             Destroy(collision.gameObject);
         }
+        if (collision.gameObject.CompareTag("Cura"))
+        {
+            GanharVida.Life_Change(4);
+            Destroy(collision.gameObject);
+        }
     }
     void Morte()
     {

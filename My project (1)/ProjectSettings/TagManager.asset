@@ -12,6 +12,7 @@ TagManager:
   - XP2
   - XP3
   - XP_Circle
+  - Cura
   layers:
   - Default
   - TransparentFX

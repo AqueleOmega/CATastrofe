@@ -9,6 +9,7 @@ public class Inimigo3 : MonoBehaviour
     public Rigidbody2D rb;
     public GameObject prefab_dano;
     public GameObject prefab_xp;
+    public GameObject prefab_cura;
     Transform player_transform;
 
     void Start()
@@ -19,6 +20,11 @@ public class Inimigo3 : MonoBehaviour
 
     void Morte()
     {
+        int spawnCura = Random.Range(1,5);
+        if (spawnCura == 4)
+        {
+            Instantiate(prefab_cura,transform.position,Quaternion.identity);
+        }
         Destroy(gameObject);
         Instantiate(prefab_xp, transform.position, Quaternion.identity);
         Variaveis.inimigos_atuais -= 1;

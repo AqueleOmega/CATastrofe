@@ -182,6 +182,7 @@ MonoBehaviour:
   rb: {fileID: 2515454605443960027}
   prefab_dano: {fileID: 5205947676578360829, guid: 43bef6e3eda85dc498d77c1dff46ee0b, type: 3}
   prefab_xp: {fileID: 7853714708461346536, guid: da41e14d84161b648b3121ca74a25fc3, type: 3}
+  prefab_cura: {fileID: 3294034297562036116, guid: 73c9155ca03db33408906e4b5ee8c20c, type: 3}
 --- !u!95 &-4282081686635568939
 Animator:
   serializedVersion: 7

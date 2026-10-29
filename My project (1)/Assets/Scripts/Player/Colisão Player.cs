@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class ColisãoPlayer : MonoBehaviour
 {
+    public Bau_Mestre scriptBau;
     void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
@@ -19,24 +20,30 @@ public class ColisãoPlayer : MonoBehaviour
         if (collision.gameObject.CompareTag("XP"))
         {
             Variaveis.xp += Variaveis.orbe_1;
-            nivel.ChecarNivel();
+            //nivel.ChecarNivel();
             Destroy(collision.gameObject);
         }
         if (collision.gameObject.CompareTag("XP2"))
         {
             Variaveis.xp += Variaveis.orbe_2;
-            nivel.ChecarNivel();
+            //nivel.ChecarNivel();
             Destroy(collision.gameObject);
         }
         if (collision.gameObject.CompareTag("XP3"))
         {
             Variaveis.xp += Variaveis.orbe_3;
-            nivel.ChecarNivel();
+            //nivel.ChecarNivel();
             Destroy(collision.gameObject);
         }
         if (collision.gameObject.CompareTag("Cura"))
         {
             GanharVida.Life_Change(4);
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.CompareTag("Bau"))
+        {
+            scriptBau.AbrirBau();
+
             Destroy(collision.gameObject);
         }
     }

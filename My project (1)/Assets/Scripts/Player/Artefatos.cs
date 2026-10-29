@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Bota
+/*public class Bota
 {
     string nome = "Bota";
     string resume = "Uma bota legal";
@@ -43,3 +43,4 @@ public class Teste
         Variaveis.cooldown_bala *= 0.01f;
     }
 }
+*/

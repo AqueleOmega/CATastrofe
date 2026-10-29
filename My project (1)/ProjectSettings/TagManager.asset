@@ -13,6 +13,7 @@ TagManager:
   - XP3
   - XP_Circle
   - Cura
+  - Bau
   layers:
   - Default
   - TransparentFX

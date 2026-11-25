@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class Cronometro : MonoBehaviour
 {
     public Text cronometro;
+    bool First = false;
 
 
     // Update is called once per frame
@@ -26,6 +27,12 @@ public class Cronometro : MonoBehaviour
         else
         {
             cronometro.text = "Tempo: " + Variaveis.minutos + "m" + tempoarrendodado + "s";
+        }
+
+        if(Variaveis.segundos > 50 && First == false)
+        {
+            Variaveis.cooldowninimigos = 0.5f;
+            First = true;
         }
             
     }

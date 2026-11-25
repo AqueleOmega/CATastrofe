@@ -20,8 +20,8 @@ public class Inimigo02 : MonoBehaviour
 
     void Morte()
     {
-        int spawnCura = Random.Range(1,5);
-        if (spawnCura == 4)
+        int spawnCura = Random.Range(1,101);
+        if (spawnCura < 7)
         {
             Instantiate(prefab_cura, transform.position,Quaternion.identity);
         }

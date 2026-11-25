@@ -20,19 +20,19 @@ public class ColisãoPlayer : MonoBehaviour
         if (collision.gameObject.CompareTag("XP"))
         {
             Variaveis.xp += Variaveis.orbe_1;
-            //nivel.ChecarNivel();
+            nivel.ChecarNivel();
             Destroy(collision.gameObject);
         }
         if (collision.gameObject.CompareTag("XP2"))
         {
             Variaveis.xp += Variaveis.orbe_2;
-            //nivel.ChecarNivel();
+            nivel.ChecarNivel();
             Destroy(collision.gameObject);
         }
         if (collision.gameObject.CompareTag("XP3"))
         {
             Variaveis.xp += Variaveis.orbe_3;
-            //nivel.ChecarNivel();
+            nivel.ChecarNivel();
             Destroy(collision.gameObject);
         }
         if (collision.gameObject.CompareTag("Cura"))

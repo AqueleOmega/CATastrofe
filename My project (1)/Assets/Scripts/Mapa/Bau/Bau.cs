@@ -5,7 +5,7 @@ public class Bau : MonoBehaviour
 {
     float distancia = 20;
     public GameObject bau;
-    float segundos = 10;
+    float segundos = 40;
     Transform player_transform;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
